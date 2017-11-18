@@ -1,0 +1,22 @@
+{
+  "name": "jogjobs-api",
+  "version": "0.0.1",
+  "description": "Rest API for jogjobs",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://guilherme-paschoal@github.com/guilherme-paschoal/jogjobs-api.git"
+  },
+  "author": "Guilherme Paschoal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guilherme-paschoal/jogjobs-api/issues"
+  },
+  "homepage": "https://github.com/guilherme-paschoal/jogjobs-api#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
