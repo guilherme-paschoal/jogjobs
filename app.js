@@ -1,9 +1,17 @@
-var express = require('express');
+const express = require('express');
+const bodyParser = require('body-parser');
 
-var app = express();
+//controllers
+const jobsController = require('./controllers/jobsController');
 
-app.get('/', function(req, res) {
-  res.send('yolo');
-});
+const app = express();
+
+app.use(bodyParser.json());
+
+//initialize controllers
+jobsController(app);
 
 app.listen(3000);
+
+
+
