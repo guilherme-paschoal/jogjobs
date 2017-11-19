@@ -2,7 +2,7 @@
   "name": "jogjobs-api",
   "version": "0.0.1",
   "description": "Rest API for jogjobs",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "test"
   },
