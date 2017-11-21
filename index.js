@@ -1,10 +1,10 @@
 const app = require('express')();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const errorHandling = require('./helpers/errorHandling');
+const errorHandling = require('./helpers/error-handling');
 
 //controllers
-const jobsController = require('./controllers/jobsController');
+const jobsController = require('./controllers/jobs-controller');
 
 // The order of middlewares in app.use matters. bodyparser needs to be first. Or something like that.
 app.use(bodyParser.json());
@@ -26,6 +26,5 @@ jobsController(app);
 app.listen(process.env.port || 3000, function(){
   console.log("API Server started");
 });
-
 
 
